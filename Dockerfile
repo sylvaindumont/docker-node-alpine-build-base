@@ -2,8 +2,7 @@ FROM node:alpine
 
 RUN apk add --no-cache \
         python \
-        make \
-        g++ \
+        build-base \
         git \
     && yarn global add node-gyp \
     && rm -rf /root/.cache/yarn/*
