@@ -1,7 +1,7 @@
-FROM node:12-alpine
+FROM node:12-alpine3.12
 
 RUN apk add --no-cache \
-        python \
+        python2 \
         build-base \
         git \
         bash \
